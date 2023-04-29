@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 
     let day = date.getDay();
 
-    res.render("list", { listTitle: day, newListItem: items })
+    res.render("index", { listTitle: day, newListItem: items })
 
 
 });
@@ -46,7 +46,7 @@ app.post('/', (req, res) => {
 
 app.get("/work", (req, res) => {
 
-    res.render("list", { listTitle: "Work List", newListItem: workItems })
+    res.render("index", { listTitle: "Work List", newListItem: workItems })
 
 });
 
